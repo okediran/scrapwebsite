@@ -3,12 +3,6 @@
   margin: 0;
 }
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   cursor:crosshair;
 }
 
@@ -36,7 +30,12 @@ body {
 
 /* HOME */
 
-/* Banner */
+/* Home Banner */
+
+#Home{
+  overflow: hidden;
+  height: 100%;
+}
 
 #Home .Banner {
   text-align: left;
@@ -48,11 +47,49 @@ body {
   background-size: cover;
   background-attachment: fixed;
   width: 100% !important;
-  position: fixed;
   color: white;
   padding: 10rem 0 0 7rem;
 }
 
 #Home .Banner h1{
   font-size: 150px;
+}
+
+/* Home servce */
+
+#Home .service{
+  margin-top: 14rem;
+}
+
+#Home .service .card{
+  border: none ;
+}
+
+#Home .service .card span{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 200px;
+  text-align: center;
+  opacity: .1;
+  line-height: 0;
+}
+
+#Home .service .service-details .number{
+ font-size: 2rem;
+}
+
+#Home .service .card .card-body{
+  text-align: center;
+  padding: 0 30px;
+}
+#Home .service .card .card-body h1{
+  font-size: 70px;
+}
+
+#Home .service .service-details{
+  font-size: 22px;
+  margin-top: -8rem;
+}
+#Home .service .service-details h2{
+  font-weight: 600;
+  font-size: 2.3rem;
 }
