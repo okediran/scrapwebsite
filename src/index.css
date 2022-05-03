@@ -28,7 +28,7 @@ body {
   font-size: 25px
 }
 #header .navbar-nav .a{
-  margin-left: 60px;
+  margin-left: 50px;
 }
 #header .navbar-nav a:hover{
   color: purple;

@@ -17,6 +17,7 @@ function Header() {
                         <Nav.Link className='a' href="#pricing">Gallery</Nav.Link>
                         <Nav.Link className='a' href="#pricing">Art Collection</Nav.Link>
                         <Nav.Link className='a' href="#pricing">Team</Nav.Link>
+                        <Nav.Link className='a' href="#pricing">Project</Nav.Link>
                         <Nav.Link className='a' href="#pricing">Contact</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
