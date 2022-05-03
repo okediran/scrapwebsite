@@ -33,3 +33,26 @@ body {
 #header .navbar-nav a:hover{
   color: purple;
 }
+
+/* HOME */
+
+/* Banner */
+
+#Home .Banner {
+  text-align: left;
+  font-size: 18px;
+  height: 700px !important;
+  background:linear-gradient(rgba(128,0,128,.6),rgba(128,0,128,.6)), url(./asses/image/doug-linstedt-jEEYZsaxbH4-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100% !important;
+  position: fixed;
+  color: white;
+  padding: 10rem 0 0 7rem;
+}
+
+#Home .Banner h1{
+  font-size: 150px;
+}

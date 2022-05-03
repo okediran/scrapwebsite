@@ -1,9 +1,12 @@
 import React from 'react';
+// logo
 import logo from "../../asses/image/scrap-logo@3x-1580x2048.png";
+// bootstrap
 import { Navbar, Nav } from 'react-bootstrap';
 function Header() {
     return (
         <section id='header'>
+            
             {/* BRAND */}
             <Navbar expand="lg">
                 <img style={{ width: "55px" }} src={logo} alt="" />
