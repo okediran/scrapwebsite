@@ -7,13 +7,11 @@ function Header() {
     return (
         <section id='header'>
             
-            {/* BRAND */}
-            <Navbar expand="lg">
-                <img style={{ width: "55px" }} src={logo} alt="" />
-            </Navbar>
             {/* ROUTE */}
             <Navbar expand="lg">
-                <Navbar.Collapse id="navbarScroll">
+                <img style={{ width: "50px" }} src={logo} alt="" />
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav">
                     <Nav>
                         <Nav.Link href="#home">Home</Nav.Link>
                         <Nav.Link className='a' href="#features">About</Nav.Link>

@@ -79,7 +79,7 @@ function Home() {
 
             {/* video section */}
             <div className='video'>
-                
+                <video src=""></video>
             </div>
 
         </section>
