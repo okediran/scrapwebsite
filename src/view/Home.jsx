@@ -1,6 +1,8 @@
 import React from 'react';
-
+import Video from "../component/video/video";
 function Home() {
+
+
     return (
         <section id='Home'>
 
@@ -78,8 +80,8 @@ function Home() {
             </div>
 
             {/* video section */}
-            <div className='video'>
-                <video src=""></video>
+            <div className='Home-video'>
+                <Video/>
             </div>
 
         </section>

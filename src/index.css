@@ -92,3 +92,10 @@ body {
   font-weight: 600;
   font-size: 2.3rem;
 }
+
+/* Home-video */
+
+#Home .Home-video{
+  padding: 0 50px;
+  margin: 8rem 0px;
+}
