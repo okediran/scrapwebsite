@@ -4,7 +4,7 @@ function Video() {
     
     return (
         <div>
-           <ReactPlayer  width='100%' height='700px' url='https://www.youtube.com/watch?v=ysz5S6PUM-U' controls/> 
+           <ReactPlayer  width='100%' height='700px' url='https://www.youtube.com/watch?v=ysz5S6PUM-U' controls /> 
         </div>
         );
 }

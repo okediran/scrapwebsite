@@ -1,6 +1,6 @@
 import React from 'react';
 // logo
-import logo from "../../asses/image/scrap-logo@3x-1580x2048.png";
+import logo from "../../asses/image/LOGO11-01.png";
 // bootstrap
 import { Navbar, Nav } from 'react-bootstrap';
 function Header() {
@@ -9,8 +9,7 @@ function Header() {
             
             {/* ROUTE */}
             <Navbar expand="lg">
-                <img style={{ width: "50px" }} src={logo} alt="" />
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Brand href="#home"><img style={{ width: "170px" }} src={logo} alt="" /></Navbar.Brand>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav>
                         <Nav.Link href="#home">Home</Nav.Link>
