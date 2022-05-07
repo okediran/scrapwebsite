@@ -8,6 +8,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/pagination";
 import "swiper/css";
 import { Pagination , Autoplay } from "swiper";
+import Card from "../component/card/Card";
 
 
 function Home() {
@@ -33,58 +34,17 @@ function Home() {
                     <div className='col-xl-11 col-xxl-11 mx-auto'>
                         <div className='row'>
                             <div className='col-lg-3 col-md-6 col-sm-12'>
-                                <div className='card'>
-                                    <div className='card-body'>
-                                        <span>01</span>
-                                        <div className='service-details'>
-                                            <p className='number'>01</p>
-                                            <h2>EDUCATION</h2>
-                                            <p className='details'>The primary purpose of SCRAP is to serve as a conduit through which quality education is delivered to foster grassroot development.</p>
-                                        </div>
-                                    </div>
-                                </div>
+                                <Card number="01" h2="EDUCATION" cont="The primary purpose of SCRAP is to serve as a conduit through which quality education is delivered to foster grassroot development."/>
                             </div>
                             <div className='col-lg-3 col-md-6 col-sm-12'>
-                                <div className='card'>
-                                    <div className='card-body'>
-                                        <span>02</span>
-                                        <div className='service-details'>
-                                            <p className='number'>02</p>
-                                            <h2>SOCIAL CHANGE</h2>
-                                            <p className='details'>
-                                                We are connecting all the dots necessary to ensure an improved better social environment by providing infrastructure and materials
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
+                                <Card number="02" h2="SOCIAL EDUCATION" cont="We are connecting all the dots necessary to ensure an improved better social environment by providing infrastructure and materials"/>
                             </div>
                             <div className='col-lg-3 col-md-6 col-sm-12'>
-                                <div className='card'>
-                                    <div className='card-body'>
-                                        <span> 03 </span>
-                                        <div className='service-details'>
-                                            <p className='number'>03</p>
-                                            <h2>RECYCLING</h2>
-                                            <p className='details'>
-                                                Through SCRAP we are developing new recycling culture among the younger generation and also exploring ways too recycle
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
+                                <Card number="03" h2="RECYCLING" cont="Through SCRAP we are developing new recycling culture among the younger generation and also exploring ways too recycle"/>
                             </div>
                             <div className='col-lg-3 col-md-6 col-sm-12'>
-                                <div className='card'>
-                                    <div className='card-body'>
-                                        <span>04</span>
-                                        <div className='service-details'>
-                                            <p className='number'>04</p>
-                                            <h2>ART</h2>
-                                            <p className='details'>
-                                                Creativity is boundless, SCRAP participants use Art as a medium of expression using readily available waste materials.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
+                                <Card number="04" h2="ART" cont="Creativity is boundless, SCRAP participants use Art as a medium of expression using readily available waste materials."/>
+
                             </div>
                         </div>
                     </div>

@@ -1,4 +1,5 @@
-import Home from "./view/Home";
+// import Home from "./view/Home";
+import About from "./view/About";
 import Header from "./component/Header/Header";
 import Footer from "./component/footer/footer";
 import ScrollTop from "./utilities/scrolltop/scrollTop";
@@ -7,7 +8,8 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      <Home/>
+      {/* <Home/> */}
+      <About/>
       <ScrollTop/>
       <Footer/>
     </div>
