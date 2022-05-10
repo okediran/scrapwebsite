@@ -1,4 +1,3 @@
-import React from 'react';
 import Video from "../component/video/video";
 import img1 from "../asses/image/photo1648231775.jpeg";
 import img3 from "../asses/image/photo1648231302.jpeg";
@@ -7,50 +6,70 @@ import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/pagination";
 import "swiper/css";
-import { Pagination , Autoplay } from "swiper";
+import { Pagination } from "swiper";
 import Card from "../component/card/Card";
+import useDocumentTitle from "../utilities/useDocumentTitle";
 
 
 function Home() {
-
+    function Page(props) {
+        const titlePrefix = 'Scrap'
+        useDocumentTitle(`${props.title}${titlePrefix}`)
+        return <h2>{props.content}</h2>
+      };
+      
+      const containerVariant = {
+          hidden:{
+            opacity:0,
+          },
+          visible:{
+            opacity:1,
+            transition:{delay:.4,duration:1.5}
+          },
+          exit:{
+            x:'-100vh',
+            transition: {ease:'easeInOut'}
+          }
+      }
 
     return (
-        <section id='Home'>
-
+        <motion.section id='Home'
+            variants={containerVariant}
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+            >
+            {/* title */}
+            <div style={{position:"absolute"}}>
+                <Page title='Home - ' />
+            </div>
             {/* banner */}
-            <div className='row banner-body'>
+            <div className='row'>
                 <div className='col-12'>
-                    <Swiper className="mySwiper"  autoplay={{delay: 3000,disableOnInteraction: false,}} modules={[Autoplay]}>
-                        <SwiperSlide className='swiper-slide1'> <motion.h1 initial={{opacity:0,x: "-170px" }} animate={{opacity:1,x: "0px",transition:{delay:0.5,duration: 0.5}}}>Learn With <br />  Scrap</motion.h1></SwiperSlide>
-                        <SwiperSlide className='swiper-slider2'><motion.h1 initial={{opacity:0,y: "-170px" }} animate={{opacity:1,y: "0px",transition:{delay:4,duration: 0.9}}}>Learn With <br />  Scrap</motion.h1></SwiperSlide>
-                        <SwiperSlide className='swiper-slider3'><motion.h1 initial={{opacity:0,x: "170px" }} animate={{opacity:1,x: "0px",transition:{delay:7,duration: 0.9}}}>Learn With <br />  Scrap</motion.h1></SwiperSlide>
-                    </Swiper>
+                    <div className='banner'> <motion.h1 initial={{opacity:0,x: "-170px" }} animate={{opacity:1,x: "0px",transition:{delay:1.5,duration: 1}}}>Learn With <br />  Scrap</motion.h1></div>
                 </div>
             </div>
 
-            {/* service */}
-            <div className='service'>
-                <div className='row'>
+            {/* card */}
+                <div className='row' style={{marginTop:"5em"}}>
                     <div className='col-xl-11 col-xxl-11 mx-auto'>
                         <div className='row'>
                             <div className='col-lg-3 col-md-6 col-sm-12'>
-                                <Card number="01" h2="EDUCATION" cont="The primary purpose of SCRAP is to serve as a conduit through which quality education is delivered to foster grassroot development."/>
+                                <Card number="01" span="01" h2="EDUCATION" cont="The primary purpose of SCRAP is to serve as a conduit through which quality education is delivered to foster grassroot development."/>
                             </div>
                             <div className='col-lg-3 col-md-6 col-sm-12'>
-                                <Card number="02" h2="SOCIAL EDUCATION" cont="We are connecting all the dots necessary to ensure an improved better social environment by providing infrastructure and materials"/>
+                                <Card number="02" span="02" h2="SOCIAL EDUCATION" cont="We are connecting all the dots necessary to ensure an improved better social environment by providing infrastructure and materials"/>
                             </div>
                             <div className='col-lg-3 col-md-6 col-sm-12'>
-                                <Card number="03" h2="RECYCLING" cont="Through SCRAP we are developing new recycling culture among the younger generation and also exploring ways too recycle"/>
+                                <Card number="03" span="03" h2="RECYCLING" cont="Through SCRAP we are developing new recycling culture among the younger generation and also exploring ways too recycle"/>
                             </div>
                             <div className='col-lg-3 col-md-6 col-sm-12'>
-                                <Card number="04" h2="ART" cont="Creativity is boundless, SCRAP participants use Art as a medium of expression using readily available waste materials."/>
+                                <Card number="04" h2="ART" span="04" cont="Creativity is boundless, SCRAP participants use Art as a medium of expression using readily available waste materials."/>
 
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
             {/* video section */}
             <div className='Home-video'>
                 <Video />
@@ -79,7 +98,7 @@ function Home() {
             </div>
 
             {/* about */}
-            <div className='about' style={{ marginBottom: "10rem" }}>
+            <div className='about' style={{ margin: "5rem 0" }}>
                 <div className='row'>
                     <div>
                         <svg class="qodef-e-quote-icon" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 188 123" space="preserve">
@@ -118,7 +137,7 @@ function Home() {
                         <motion.img src={img3} className="active-img pipline-img" alt="" />
                     </div>
                     <div className='col-lg-6 d-flex' style={{ justifyContent: "center", alignItems: "center" }}>
-                        <div className='pipeline-content' style={{ padding: "0 15rem 0 2rem" }}>
+                        <div className='pipeline-content' style={{ padding: "0 7rem 0 4rem" }}>
                             <h2>THE SCRAP <br /> PIPELINE</h2>
                             <p>
                                 What happens at the end of SCRAP ? We are building Pipeline that seamlessly transition participants into building the next generation of industrial revolution.
@@ -130,17 +149,18 @@ function Home() {
             </div>
 
             {/* support */}
-            <div className='Vision' style={{ marginTop: "15rem" }}>
+            <div className='Vision support' style={{ marginTop: "15rem" }}>
                 <div className='row'>
-                    <span style={{ fontSize: "250px", fontWeight: "700", opacity: ".1", position: "absolute", letterSpacing: "20px" }}>
+                    <span style={{ fontSize: "200px", fontWeight: "700", opacity: ".1", position: "absolute", letterSpacing: "20px" }}>
                         FRAME
                     </span>
                     <div className='col-lg-6' style={{ marginTop: "6rem" }}>
                         <div style={{ paddingLeft: "80px" }}>
-                            <h2 style={{ letterSpacing: "0" }}>Support SCRAP <br /> Through <br />Green  Factory Magazine</h2>
-                            <p style={{ padding: "0 150px 0 0", fontSize: "25px", marginTop: "30px" }}>
-                                You can fund SCRAP by offsetting your organization or personal plastic footprint by purchasing a reclaim credit.
+                            <h2 style={{ letterSpacing: "0",fontSize:"40px" }}>Support SCRAP <br /> Through <br />Green  Factory Magazine</h2>
+                            <p style={{ padding: "0 150px 0 0", fontSize: "20px", marginTop: "30px" }}>
+                                You can can support scrap by purchasing a copy of Green Factory Magazine. 100% of Green Factory's profit goes into various SCRAP project.
                             </p>
+                            <button className='btn'>Buy Magazine</button>
                         </div>
                     </div>
                     <div className='col-lg-6'>
@@ -149,7 +169,7 @@ function Home() {
                 </div>
             </div>
 
-        </section>
+        </motion.section>
     );
 }
 

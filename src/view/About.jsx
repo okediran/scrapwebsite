@@ -1,14 +1,42 @@
-import React from 'react';
 import img1 from "../asses/image/10....jpg";
 import profile from "../asses/image/3389.jpg";
 import Card from "../component/card/Card";
 import Banner from "../utilities/Banner/Banner";
+import useDocumentTitle from "../utilities/useDocumentTitle";
+import { motion } from "framer-motion";
 
 function About() {
+    function Page(props) {
+        const titlePrefix = 'Scrap'
+        useDocumentTitle(`${props.title}${titlePrefix}`)
+        return <h2>{props.content}</h2>
+      };
+      const containerVariant = {
+        hidden:{
+          opacity:0,
+        },
+        visible:{
+          opacity:1,
+          transition:{delay:.4,duration:1.5}
+        },
+        exit:{
+          x:'-100vh',
+          transition: {ease:'easeInOut'}
+        }
+    }
     return (
-        <section id='About'>
+        <motion.section id='About'
+        variants={containerVariant}
+        initial="hidden"
+        animate="visible"
+        exit="exit"
+        >
+               {/* title */}
+               <div style={{position:"absolute"}}>
+                <Page title='About - ' />
+            </div>
             {/* banner */}
-                <Banner page="About" route="About"/>
+                <Banner page="About Us" route="About Us"/>
             <div className='padding'>
                 {/* about details */}
                 <div className='about-details'>
@@ -27,7 +55,7 @@ function About() {
                                     <p>To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, pain  resultant pleasure praising teachings of the great explorer...</p>
                                     <div class="author-box fix">
                                         <div class="img-box">
-                                            <img src={profile} alt="Awesome Image" />
+                                            <img src={profile} alt="founder"/>
                                         </div>
                                         <div class="text-box">
                                             <h3>Dr. Jerome Sinclair</h3>
@@ -41,7 +69,7 @@ function About() {
                 </div>
 
                 {/* card */}
-                <div className='service'>
+                <div className='service' style={{marginTop:"6rem"}}>
                     <div className='row'>
                         <div className='col-xl-11 col-xxl-11 mx-auto'>
                             <div className='row'>
@@ -157,7 +185,7 @@ function About() {
                         </div>
                     </div>
             </div>
-        </section>
+        </motion.section>
     );
 }
 

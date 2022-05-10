@@ -1,8 +1,7 @@
-import React from 'react';
 
 function Card(props) {
     return (
-        <div>
+        <div className="card-home">
             <div className='card'>
                 <div className='card-body'>
                     <span>{props.span}</span>
