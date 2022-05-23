@@ -1,7 +1,7 @@
 import Video from "../component/video/video";
 import img1 from "../asses/image/photo1648231775.jpeg";
 import img3 from "../asses/image/photo1648231302.jpeg";
-import img4 from "../asses/image/snapshot-003-2.png";
+import img4 from "../asses/image/IMG_1203.JPG";
 import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/pagination";
@@ -38,6 +38,7 @@ function Home() {
             initial="hidden"
             animate="visible"
             exit="exit"
+            style={{marginBottom:"10rem"}}
             >
             {/* title */}
             <div style={{position:"absolute"}}>
@@ -46,7 +47,9 @@ function Home() {
             {/* banner */}
             <div className='row'>
                 <div className='col-12'>
-                    <div className='banner'> <motion.h1 initial={{opacity:0,x: "-170px" }} animate={{opacity:1,x: "0px",transition:{delay:1.5,duration: 1}}}>Learn With <br />  Scrap</motion.h1></div>
+                    <div className='banner'> 
+                        <motion.h1 initial={{opacity:0,x: "-170px" }} animate={{opacity:1,x: "0px",transition:{delay:1.5,duration: 1}}}>Learn With <br />  SCRAP</motion.h1>
+                    </div>
                 </div>
             </div>
 
@@ -58,7 +61,7 @@ function Home() {
                                 <Card number="01" span="01" h2="EDUCATION" cont="The primary purpose of SCRAP is to serve as a conduit through which quality education is delivered to foster grassroot development."/>
                             </div>
                             <div className='col-lg-3 col-md-6 col-sm-12'>
-                                <Card number="02" span="02" h2="SOCIAL EDUCATION" cont="We are connecting all the dots necessary to ensure an improved better social environment by providing infrastructure and materials"/>
+                                <Card number="02" span="02" h2="SOCIAL CHANGE" cont="We are connecting all the dots necessary to ensure an improved better social environment by providing infrastructure and materials"/>
                             </div>
                             <div className='col-lg-3 col-md-6 col-sm-12'>
                                 <Card number="03" span="03" h2="RECYCLING" cont="Through SCRAP we are developing new recycling culture among the younger generation and also exploring ways too recycle"/>
@@ -81,18 +84,18 @@ function Home() {
                     <span style={{ fontSize: "250px", fontWeight: "700", opacity: ".1", position: "absolute", letterSpacing: "20px" }}>
                         VISION
                     </span>
-                    <div className='col-lg-5 col-md-6' style={{ marginTop: "6rem" }}>
-                        <div style={{ paddingLeft: "80px" }}>
-                            <h2>THE SCRAP <br /> VISION</h2>
-                            <p>
-                                SCRAP is an initiative of Waste Reclaim committed to fostering grassroot quality education through recycling , SCRAP is designed as a conduit that engages participants on all levels and address common barriers to progress while also transitioning them into opportunities . It’s an social system that delivers better outcomes for people, and the environment.
-                            </p>
+                    <div className='col-lg-6 col-md-6' style={{ marginTop: "6rem" }}>
+                        <div className="d-flex" style={{justifyContent: "center", alignItems: "center"}}>
+                            <div style={{width:"600px"}}>
+                                <h2>THE SCRAP <br /> VISION</h2>
+                                <p>
+                                    SCRAP is an initiative of Waste Reclaim committed to fostering grassroot quality education through recycling , SCRAP is designed as a conduit that engages participants on all levels and address common barriers to progress while also transitioning them into opportunities . It’s an social system that delivers better outcomes for people, and the environment.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div className='col-lg-7 col-md-6'>
-                        <div className='img-div'>
-                            <motion.img initial={{ x: '300px' }} animate={{ x: "0px" }} transition={{ delay: 1, duration: 1 }} src={img1} className="active-img" alt="" />
-                        </div>
+                    <div className='col-lg-6 col-md-6' style={{overFlow:"hidden"}}>
+                            <img src={img1}  alt="" />
                     </div>
                 </div>
             </div>
@@ -118,7 +121,7 @@ function Home() {
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div>
-                                    <h4 itemprop="description" class="qodef-e-text">Initially  I had no idea about craft  so when the program  started I was informed by mallam umar at first I was discouraged but when I joined the program I saw how things were going and I found it fun to learn how to work as a team. I realise that with recycling we get to reduce the environmental  pollution hrre in Nigeria because that is one major problem.</h4>
+                                    <h4 itemprop="description" class="qodef-e-text">Initially  I had no idea about craft  so when the program  started I was informed by mallam umar at first I was discouraged but when I joined the program I saw how things were going and I found it fun to learn how to work as a team. I realise that with recycling we get to reduce the environmental  pollution here in Nigeria because that is one major problem.</h4>
                                     <span>Amina /Team Red</span>
                                 </div>
                             </SwiperSlide>
@@ -133,10 +136,10 @@ function Home() {
                     <span>
                         PIPELINE
                     </span>
-                    <div className='col-lg-6' style={{ zIndex: "1" }}>
+                    <div className='col-lg-6 div-image' style={{ zIndex: "1",overflow:"hidden" }}>
                         <motion.img src={img3} className="active-img pipline-img" alt="" />
                     </div>
-                    <div className='col-lg-6 d-flex' style={{ justifyContent: "center", alignItems: "center" }}>
+                    <div className='col-lg-6 d-flex col' style={{ justifyContent: "center", alignItems: "center" }}>
                         <div className='pipeline-content' style={{ padding: "0 7rem 0 4rem" }}>
                             <h2>THE SCRAP <br /> PIPELINE</h2>
                             <p>
@@ -163,7 +166,7 @@ function Home() {
                             <button className='btn'>Buy Magazine</button>
                         </div>
                     </div>
-                    <div className='col-lg-6'>
+                    <div className='col-lg-6 col d-flex' style={{zIndex:"1", justifyContent:"center",alignItems:"center"}}>
                         <img src={img4} className="active-img" alt="" />
                     </div>
                 </div>

@@ -1,22 +1,22 @@
-import React from 'react';
 import logo from "../../asses/image/scrap-logo@3x-1580x2048.png";
 
 function Gallerycard(props) {
     return (
-        <div className='col-md-3' style={{marginTop:"5em"}}>
+        <div className='col-lg-3 col-md-6' style={{marginTop:"5em"}}>
             <div className='card'>
                 <div className='card-body'>
                     <div class="box-photo">
-                        <img src={props.img} alt="Jacques Marie Mage" width="417" height="298" class="lazy lazy-loaded" />
+                        <img src={props.img} alt="Jacques Marie Mage"  class="lazy lazy-loaded" />
                     </div>
                     <div class="content">
-                        <div className='product-name'>
-                            <a href="/sites/jacques-marie-mage">Jacques Marie Mage</a>
+                        <div className='product-name d-flex'>
+                            <p>{props.name}</p>
+                            <button className="btn" onClick={props.click}>Quick View</button>
                         </div>
                         <div class="row content-child">
                             <div class="box-left col-xl-7">From United States</div>
                             <div class="box-right col-xl-5 text-end">
-                                April 30, 2022
+                                {props.Date}
                             </div>
                         </div>
                     </div>
@@ -28,7 +28,7 @@ function Gallerycard(props) {
                                     by <strong><a href="/aristidebenoist/" class="text-black">waste recycling</a></strong>
                                 </div>
                                 <div className='price col-xl-3'>
-                                    40$
+                                  {props.price}
                                 </div>
                             </div>
                         </div>

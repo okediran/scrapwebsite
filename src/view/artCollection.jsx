@@ -1,39 +1,21 @@
 import Banner from "../utilities/Banner/Banner";
-import { useState } from "react";
+import {  useState } from "react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination,Navigation } from "swiper";
 import Gallerycard from "../component/card/gallerycard";
-import img1 from "../asses/image/6247164753bc3002352344.png";
-import img3 from "../asses/image/jeet-dhanoa-tGHkC5ntUGc-unsplash-removebg-preview.png";
-import img7 from "../asses/image/bannercase005.png";
-import galleryimg1 from "../asses/image/6244092595b1b782741705.jpg";
-import galleryimg2 from "../asses/image/6256b6742f37c883037307.jpg";
-import galleryimg3 from "../asses/image/625591587ec4d297919716.jpg";
-import galleryimg4 from "../asses/image/624c64d1e57c4825543639.jpg";
-import galleryimg5 from "../asses/image/6247164753bc3002352344.png";
-import galleryimg6 from "../asses/image/625466e710b1c547250885.jpg";
-import galleryimg7 from "../asses/image/6243305f5e4f4588898306.png";
-import galleryimg8 from "../asses/image/623ae5dca2210628419203.jpg";
-import galleryimg9 from "../asses/image/6243305f5e4f4588898306.png";
-import galleryimg10 from "../asses/image/624b76812746c235952958.png";
 import useDocumentTitle from "../utilities/useDocumentTitle";
 import { motion } from "framer-motion";
-import { Modal, Button } from 'react-bootstrap';
+import { Modal } from 'react-bootstrap';
+import artarray from "../utilities/json/art";
 
 function Art() {
+
     // modal
     const [show, setShow] = useState(false);
-    const [modalTitle, setModalTitle] = useState("");
-
-    const handleClose = () => setShow(false);
-
-    const handleShow = (title) => {
-        setModalTitle(title)
-        setShow(true)
-    };
+    
 
     // title
     function Page(props) {
@@ -57,8 +39,33 @@ function Art() {
         }
     }
 
+    function ProductArray(product) {
+       return(
+        <Gallerycard img={product.image} 
+        key={product.id} 
+        name={product.product_name}
+        Date={product.created_date}
+        click={()=>handleShow(product)}
+        /> 
+       ); 
+    };
+
+    // modal
+
+    const [modal, setModal] = useState("");
+
+    const handleClose = () => setShow(false);
+
+    const handleShow = (product) => {
+        setModal(product)
+        setShow(true)
+    };
+
+    console.log(modal)
     return (
+
         <motion.section id="Art" variants={containerVariant}
+        style={{marginBottom:"10rem"}}
             initial="hidden"
             animate="visible"
             exit="exit">
@@ -66,26 +73,35 @@ function Art() {
             <div style={{ position: "absolute" }}>
                 <Page title='Art - ' />
             </div>
-            {/* banner */}
+
             {/* model */}
-            <Button variant="primary" onClick={() => handleShow("Somebory")}>
-                Launch demo modal
-            </Button>
-            <Modal show={show} onHide={handleClose} centered>
-                <Modal.Body>{modalTitle}</Modal.Body>
-                <Modal.Footer>
-                    <Button variant="secondary" onClick={handleClose}>
-                        Close
-                    </Button>
-                    <Button variant="primary" onClick={handleClose}>
-                        Ok
-                    </Button>
-                </Modal.Footer>
+            <Modal size="lg" show={show} onHide={handleClose} centered>
+                <p className="close-btn" onClick={handleClose}>X</p>
+                <Modal.Body>
+                    <div className="row">
+                        <div className="col-xl-6" style={{overflow:"hidden"}}>
+                            <img src={modal.image} style={{width:"350px"}} alt="" />
+                        </div>
+                        <div className="col-xl-6" style={{overflow:"hidden"}}>
+                             <p>Name: {modal.product_name}</p>
+                             <p>Type: {modal.slug}</p>
+                             <p>Date:{modal.created_date}</p>
+                             <p style={{marginLeft:"70px"}}><img src={modal.image} alt="" style={{width:"190px"}}/></p>
+                        </div>
+                    </div>
+                 </Modal.Body>
             </Modal>
+
+            {/* banner */}
             <Banner page="Art Collection" route="Art Collection" />
 
             {/* container */}
             <div className="container">
+                <div className="row text-center" style={{marginBottom:"30px"}}>
+                    <div className="col-lg-10 col-xl-11 mx-auto">
+                        <h4>LATEST PRODUCTS</h4>
+                    </div>
+                </div> 
                 <div className='row'>
                     <div className='col-xl-12 col-lg-12 col-md-12 col-sm-12'>
                         <Swiper
@@ -98,34 +114,33 @@ function Art() {
                             modules={[Pagination,Navigation]}
                             className="mySwiper">
                             <SwiperSlide>
-                                <div className='single-team-member row'>
-                                    <div class="product-details col-xl-6">
-                                            ./g,n.rt,j;h','rtj
-                                            rthm;lrtmh;l
-                                            ;h;lrtj;ryt'
-                                            flfkghprskmth
-                                            rhl,rth;''hjrs
-                                            tth;'rtj';r
-                                    </div>
-                                    <div className="img-body col-xl-6">
-                                        <img src={img1} alt="" />
-                                    </div>
+                               <div className="slide-price" >
+                                <p>Name:{artarray[5].product_name}</p>
+                                <p>Type:{artarray[5].slug}</p>
+                                <p>Date:{artarray[5].created_date}</p>
+                               </div>
+                                <div className="img-body">
+                                    <img src={artarray[5].image} alt="" />
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div className='single-team-member row'>
-                                    <div class="product-details col-xl-6"></div>
-                                    <div className="img-body col-xl-6">
-                                     <img src={img7} alt="" />
-                                    </div>
-                                </div>
+                            <div className="slide-price" >
+                                <p>Name:{artarray[6].product_name}</p>
+                                <p>Type:{artarray[6].slug}</p>
+                                <p>Date:{artarray[6].created_date}</p>
+                            </div>
+                            <div className="img-body">
+                                <img src={artarray[6].image} alt="" />
+                            </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div className='single-team-member row'>
-                                    <div class="product-details col-xl-6"></div>
-                                    <div className="img-body col-xl-6">
-                                        <img src={img3} alt="" />
-                                    </div>
+                            <div className="slide-price" >
+                                <p>Name:{artarray[7].product_name}</p>
+                                <p>Type:{artarray[7].slug}</p>
+                                <p>Date:{artarray[7].created_date}</p>
+                               </div>
+                                <div className="img-body">
+                                    <img src={artarray[7].image} alt="" />
                                 </div>
                             </SwiperSlide>
                         </Swiper>
@@ -137,16 +152,7 @@ function Art() {
             <div className="card-deck">
                 <div className="cont">
                     <div className="row">
-                        <Gallerycard img={galleryimg1} />
-                        <Gallerycard img={galleryimg2} />
-                        <Gallerycard img={galleryimg3} />
-                        <Gallerycard img={galleryimg4} />
-                        <Gallerycard img={galleryimg5} />
-                        <Gallerycard img={galleryimg6} />
-                        <Gallerycard img={galleryimg7} />
-                        <Gallerycard img={galleryimg8} />
-                        <Gallerycard img={galleryimg9} />
-                        <Gallerycard img={galleryimg10} />
+                        {artarray.map(ProductArray)}
                     </div>
                 </div>
             </div>

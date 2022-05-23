@@ -80,7 +80,7 @@ body {
 
 #Home .banner{
   background:linear-gradient(rgba(128,0,128,.6),rgba(128,0,128,.6)), url(./asses/image/IMG_1211.JPG);
-  height: 600px !important;
+  height: 600px;
   padding: 10rem 0 0 7rem;
   font-size: 18px;
   background-position: center ;
@@ -121,19 +121,15 @@ body {
 }
 
 #Home .Vision img{
-  width: 69rem;
-  z-index: 1;
-}
-
-#Home .Vision .img-div{
-  height: 700px;
-  overflow: hidden;
+  width: 100%;
+  object-fit: cover;
 }
 #Home .Vision p{
   font-size: 20px;
 }
 #Home .support img{
-  width: 44rem;
+  width: 100%;
+  object-fit: cover;
 }
 
 
@@ -197,9 +193,9 @@ body {
   background-color: #F8F8F8;
   text-align: right;
 }
-
 #Home .Pipeline img{
-  width: 50rem;
+  width: 100%;
+  object-fit: cover;
 }
 #Home .Pipeline h2{
   font-size:50px ;
@@ -236,7 +232,7 @@ body {
    letter-spacing: 20px; 
 }
 
-                                                    /* CARD */
+                                                                /* CARD */
 
 
 .card-home .card{
@@ -267,6 +263,9 @@ body {
 .card-home .service-details{
   font-size: 19px;
   margin-top: -8rem;
+}
+.card-home .service-details .details{
+  font-size: 18px;
 }
 .card-home h2{
   font-weight: 600;
@@ -302,7 +301,6 @@ body {
   margin-right: -490px;
   transform: skew(40deg, 0deg);
 }
-
  .Banner h4{
   color: white;
   position: absolute;
@@ -317,7 +315,6 @@ body {
 .Banner h4 span{
   margin: 2px 10px 0px;
 }
-
  .Banner h1{
   position: absolute;
   top: 13rem;
@@ -344,7 +341,7 @@ body {
 
 #About .padding{
   margin-top: 7em;
-  padding: 0 5em;
+  padding: 0 3em;
 }
 #About .padding .col{
   overflow: hidden;
@@ -358,17 +355,6 @@ line-height: 1.3;
 font-weight: 800;
 text-transform: capitalize;
 }
-#About .padding .about-details h1{
-  position: relative;
-  display: block;
-  margin: 10px 0 0;
-  color: #303030;
-  font-size: 50px;
-  line-height: 1;
-  font-weight: 700;
-  text-transform: none;
-  margin-bottom: 1em;
-}
 #About .padding .about-details p{
   color: #8b8b8b;
   font-size: 20px;
@@ -377,6 +363,10 @@ text-transform: capitalize;
 }
 #About .padding .about-details .img-box{
   margin-top: 40px;
+  border-radius: 50%;
+  width: 140px;
+  overflow: hidden;
+  height: 140px;
 }
 
 #About .padding .about-details .text-box span{
@@ -385,8 +375,8 @@ text-transform: capitalize;
 }
 
 #About .padding .about-details .img-box img{
-  width: 7em;
-  border-radius: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 /*goal*/
@@ -447,38 +437,7 @@ text-transform: capitalize;
   transition: .9s;
 }
 
-/* choose */
-#About .choose-area{
-  margin-top: 10rem;
-  padding: 0 100px;
-}
 
-#About .choose-area .sec-title h3{
-  font-weight: 700;
-  color: rgb(218, 116, 218);
-}
-
-#About .single-choose-box .count {
-  position: absolute;
-  margin: -3em 0 0 -2em ;
-  font-size: 20px;
-  font-weight: 700;
-  color: #cecece;
-}
-
-#About .single-choose-box {
-  position: relative;
-  display: block;
-  padding: 80px 60px;
-  background: #f5f5f5;
-  margin-bottom: 30px;
-}
-#About .sec-title p {
-  color: #8b8b8b;
-  font-size: 20px;
-  line-height: 1.5;
-  margin: 16px 0 3em;
-}
 
                                                               /* CONTACT */
 
@@ -663,7 +622,7 @@ text-transform: capitalize;
   transform: perspective(370px) rotateX(-90deg);
   transform-origin: top;
   transition: all 0.5s;
-  background-color: rgba(0,0,0,.8);
+  background-color: rgba(0,0,0,.7);
 }
 #Team .single-team-member:hover .overlay-style-one{
   transform: perspective(370px) rotateX(-0deg);
@@ -672,6 +631,15 @@ text-transform: capitalize;
 .swiper-pagination-clickable{
   top: 520px;
 }
+#Team .single-team-member .img-rack{
+  height:419px;
+  overflow: hidden;
+  width: 400px;
+}
+#Team .single-team-member .img-rack img{
+  width: 100%;
+  object-fit: cover;
+}
 
                                                   /* Art */
 #Art .container{
@@ -679,13 +647,13 @@ text-transform: capitalize;
 }
 #Art .swiper {
   width: 100%;
-  height: 600px;
+  height: 400px;
 }
 
 #Art .swiper-slide {
-  text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   background: #fff;
+  padding: 0 50px;
 
   /* Center slide text vertically */
   display: -webkit-box;
@@ -700,6 +668,9 @@ text-transform: capitalize;
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+}
+#Art .swiper-slide .slide-price{
+  padding-left: 40px;
 }
 
 #Art .swiper img{
@@ -721,7 +692,7 @@ text-transform: capitalize;
 }
 
 #Art .card-deck{
-  margin-top: 6rem;
+  margin-top: 3rem;
 }
 #Art .card-deck .cont{
   padding: 0 100px;
@@ -733,8 +704,8 @@ text-transform: capitalize;
 }
 #Art .card-deck .card .box-photo img{
   width: 100%;
-  object-fit: contain;
-  margin-top: -3.5px;
+  height: 340px;
+  object-fit: fill;
 }
 #Art .card-deck .card-body{
   overflow: hidden !important;
@@ -767,6 +738,49 @@ text-transform: capitalize;
 #Art .card-deck .card-body .footer a{
  text-decoration: none;
 }
+#Art .card-deck .card-body .content .product-name {
+  justify-content: space-between;
+}
+#Art .card-deck .card-body .content .product-name .btn{
+ background: black;
+ color: white;
+}
+.modal-content .close-btn{
+  margin: 20px 0 0 93%;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+#Art .slide-price{
+  width: 40%;
+}
+#Art .img-body{
+  width: 60%;
+}
+
+                                                                    /* GALLERY */
+#Gallery .col{
+  overflow: hidden !important;
+  margin-top: 10px;
+}
+#Gallery .img-div{
+  overflow: hidden;
+}
+#Gallery{
+  padding-bottom: 4rem;
+  background: #1a1d20;
+}
+#Gallery .row>*{
+  padding-right: calc(var(--bs-gutter-x) * 0);
+  padding-left: calc(var(--bs-gutter-x) * .3);
+}
+ .gallery-modal .modal-content{
+  background: transparent !important;
+  border: none;
+}
+#Gallery .gallery-padding{
+  padding: 60px 120px;
+}
                                                         /* SCROLL TOP */
 
 #ScrollTop{
@@ -784,6 +798,7 @@ text-transform: capitalize;
   text-align: center;
   padding-top: 10px;
   transition: .5s;
+  flex-wrap: wrap;
 }
 
 #active-ScrollTop{
@@ -798,12 +813,31 @@ text-transform: capitalize;
   transform: rotate(-1deg);
  }
 
+ /* LOADER */
+ #Loader .loader-ball{
+  width: 20px;
+  height: 20px;
+  margin: 40px auto;
+  border-radius: 50%;
+  background-color: purple;
+ }
+ #Loader{
+   background-color: black;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   z-index: 1000000000;
+   top: 0;
+   bottom: 0;
+ }
+ 
 /* FOOTER */
 footer{
   padding: 8rem 10rem 0; 
   color: white;
   background: purple;
-  margin-top: 10rem;
  }
  footer .footer_link{
    text-decoration: none;
@@ -827,16 +861,8 @@ footer{
   color: white;
  }
 
- @media only screen and (max-width: 1440px){
-
-  #Home .Vision img{
-    width: 52rem;
-  }
+ @media only screen and (max-width: 1440px){  
   
-  #Home .pipline-img{
-    width: 700px !important;
-    margin-right: 20rem !important;
-  }
   #Home .pipeline-content{
     padding: 0 2rem 0 1rem !important;
   }
@@ -855,6 +881,18 @@ footer{
     font-weight: 645;
 }
 }
+@media only screen and (max-width: 1280px){
+  .Banner h4{
+    left: 50em;
+    top: 11em;
+    font-size: 18px;
+  }
+  .Banner h1{
+    top: 12rem;
+    left: 16rem;
+    font-size: 29px;
+  }
+}
 
 @media only screen and (max-width: 1024px){
   #header .navbar-nav a{
@@ -863,20 +901,9 @@ footer{
   #Home .Vision span,#Home .Pipeline span{
     font-size: 150px !important;
   }
-  #Home .Vision img{
-    max-height: 500px;
-    max-width: 700px;
-  }
-  #Home .banner-body .swiper h1{
-    font-size: 100px;
-  }
   #Home .Vision h2,#Home .Pipeline h2{
     font-size:45px ;
     line-height: 1;
-  }
-  #Home .pipline-img{
-    width: 500px !important;
-    margin-right: 20rem !important;
   }
   #Home .about svg {
     margin:1rem 0 0 33rem;
@@ -891,12 +918,15 @@ footer{
     padding: 8rem 1rem 0; 
     margin-top: 10rem;
    }
-   #Home .service .card span{
+   .card-home .card span{
     font-size: 150px;
    }
-   #Home .service .service-details h2{
+  .card-home .service-details h2{
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 1rem;
+  }
+  .card-home .service-details .details{
+    font-size: 15px;
   }
   #changeHeader nav label.logo, #header nav label.logo{
     padding-left: 50px;
@@ -904,7 +934,94 @@ footer{
   #changeHeader nav ul li a,  #header nav ul li a{
     font-size: 14px;
   }
+  .Banner h4{
+    left: 43em;
+    top: 10em;
+    font-size: 18px;
+  }
+  .Banner h1{
+    top: 11rem;
+    left: 16rem;
+    font-size: 29px;
+  }
+  #Home .about .swiper-slide h4{
+    font-size: 25px;
+    font-weight: 400;
+  }
+  #Home .about svg {
+    width: 220px;
+    margin:0rem 0rem 0rem 32rem;
+  }
+  #Home .support .active-img{
+    height: 400px;
+    width: 500px;
+  }
+  #Art .card-deck .cont {
+    padding: 0 0px;
+  }
+ 
 }
+@media only screen and (max-width: 768px){
+  
+  #Home .Vision span, #Home .Pipeline span{
+    display: none;
+  }
+  .Banner h4{
+    left: 35em;
+    top: 11em;
+    font-size: 16px;
+  }
+  .Banner h1{
+    top: 11rem;
+    left: 11rem;
+    font-size: 22px;
+  }
+  #Home .about svg {
+    width: 220px;
+    margin:0rem 0rem 0rem 25rem;
+  }
+  #Home .Vision h2{
+    font-size: 35px;
+  }
+  #Home .col{
+    margin-top: 30px;
+  }
+  #Home .support span{
+    width: 200px;
+  }
+  .card-home .card .card-body h2{
+    font-size: 20px;
+  }
+  .card-home .card .card-body .service-details{
+    padding: 0 10px;
+  }
+ 
+#Project .Vision span{
+  display: none;
+}
+#Project .Vision .padding-vision{
+  padding-left: 0px !important;
+}
+#Project .col{
+  margin-top: 0px !important;
+}
+#Project .Vision p {
+  padding: 0 0px;
+}
+#Contact .contact-info-map-area{
+  padding: 0%;
+}
+#Home .support img{
+  width: 100% !important;
+}
+#Art .card-deck .cont {
+  padding: 0 70px;
+}
+}
+@media only screen and (max-width: 766px){
+  
+}
+
 @media only screen and (max-width: 952px){
   #changeHeader nav label.logo, #header nav label.logo{
     padding-left: 50px;
@@ -913,6 +1030,7 @@ footer{
     font-size: 14px;
   }
 }
+
 @media only screen and (max-width: 858px){
   #changeHeader nav .checkbtn, #header nav .checkbtn{
     display: block;
@@ -930,7 +1048,7 @@ footer{
   
   #changeHeader nav ul li, #header nav ul li{
     display: block;
-    margin: 50px 0;
+    margin: 40px 0;
     line-height: 30px;
   }
   #changeHeader nav ul li a,#header nav ul li a{
@@ -938,14 +1056,130 @@ footer{
   }
   #header nav ul li a.active,nav ul li a:hover{
     background: none;
-    color: rgb(227, 34, 227) !important;
+    color: white !important;
   }
   #changeHeader nav ul li a.active,nav ul li a:hover{
     background: none;
-    color: rgb(227, 34, 227) !important;
+    color: white;
   }
 
   #check:checked ~ ul{
     left: 0;
   }
 }
+
+@media only screen and (max-width: 435px){
+  #Home .about svg {
+    width: 150px;
+    margin:0rem 0rem 0rem 14rem;
+  }
+  #Home .about .swiper-slide h4{
+    font-size: 17px;
+  }
+  #Home .about .swiper-slide span{
+    font-size: 17px;
+  }
+  #Home .banner h1 {
+    font-size: 40px;
+    margin-top: -60px;
+}
+#Home .banner  {
+  height: 300px;
+  padding: 10rem 0 0 3rem;
+}
+#Home .Vision {
+  margin-top: 0rem !important;
+}
+#Home .Vision p{
+  font-size: 15px;
+}
+#Home .Pipeline h2{
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+#Home .Pipeline p{
+  font-size: 13px;
+}
+#Home .support h2{
+  font-size: 30px !important;
+  font-weight: 400;
+}
+.Banner h4{
+  left: 11.5rem;
+  top: 11em;
+}
+.Banner{
+  height: 150px;
+}
+.Banner h1{
+  left: 1rem;
+  top: 8em;
+}
+#About .about-details img{
+  width: 320px;
+}
+#About .inner-content .sec-title h3{
+  font-size: 15px;
+  font-weight: 400 !important;
+}
+#About .inner-content .sec-title h1{
+  font-size: 22px;
+}
+#About .padding,#About .about-details .inner-content {
+  padding: 0;
+}
+#About .goal .single-mission-vision-box{
+  padding: 45px 20px 40px;
+}
+#About .about-details{
+  padding: 0 30px;
+}
+#About .choose-area {
+  padding: 0 40px;
+}
+
+#About .goal{
+  padding: 0 10px;
+}
+#Project .Vision span{
+  display: none;
+}
+#Project .Vision img{
+  width: 390px;
+}
+#Project .Vision p {
+  padding: 0 0px;
+}
+#Project .Vision{
+  overflow: hidden;
+}
+#Contact .sec-title  h1{
+  font-size: 20px;
+}
+#Art .container {
+ display: none;
+}
+#Art .card-deck{
+  margin-top: 1rem;
+}
+#Art .card-deck .cont {
+  padding: 0 15px;
+}
+#Home .Home-video {
+  padding: 0 0px;
+  margin: 8.5rem 0px 1rem;
+}
+.reactplayer{
+  height: 400px !important;
+}
+#Gallery .gallery-padding{
+  padding: 80px 20px;
+}
+#Gallery .gallery-padding .col:nth-child(1){
+  height: 200px !important;
+} 
+ol, ul {
+  padding-left: 0rem !important;
+}
+}
+

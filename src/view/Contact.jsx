@@ -22,9 +22,11 @@ function Contact() {
           x:'-100vh',
           transition: {ease:'easeInOut'}
         }
-    }
+    };
+    
     return (
         <motion.section id="Contact"  variants={containerVariant}
+        style={{marginBottom:"10rem"}}
         initial="hidden"
         animate="visible"
         exit="exit">
