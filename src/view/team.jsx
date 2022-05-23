@@ -3,12 +3,11 @@ import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
 import "swiper/css/pagination";
-import img1 from "../asses/image/004.jpg";
-import img3 from "../asses/image/3389.jpg";
-import img4 from "../asses/image/df.jpg";
-import img6 from "../asses/image/sssmin.jpg";
-import img7 from "../asses/image/2.jpg";
-import img8 from "../asses/image/3.jpg";
+import img1 from "../asses/image/finn-min.jpg";
+import img2 from "../asses/image/IMG_0676f1-min.jpg";
+import img3 from "../asses/image/IMG_3127-min.JPG";
+import img4 from "../asses/image/jossy-min.jpg";
+import img5 from "../asses/image/jumia3-min.jpg";
 import useDocumentTitle from "../utilities/useDocumentTitle";
 import { motion } from "framer-motion";
 import { useReducer} from "react";
@@ -54,6 +53,7 @@ function Team() {
 
     return (
         <motion.section id='Team'  variants={containerVariant}
+        style={{marginBottom:"10rem"}}
         initial="hidden"
         animate="visible"
         exit="exit">
@@ -86,61 +86,52 @@ function Team() {
                                 className="mySwiper"
                             >
                                 <SwiperSlide>
+                                    <div className='single-team-member'>
+                                        <div className="img-rack"><img src={img2} alt="" /></div>
+                                        <div class="overlay-style-one"></div>
+                                        <div class="text-holder text-center">
+                                            <h3>Oyinebifinide</h3>
+                                            <span>CEO</span>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
                                     <div className='single-team-member' style={{ overFlow: "hidden", height: "23em" }}>
-                                        <img style={{ width: "22em" }} src={img1} alt="" />
+                                        <div className="img-rack"><img src={img1} alt="" /></div>
                                         <div class="overlay-style-one"></div>
                                         <div class="text-holder text-center">
-                                            <h3>Dr. Eugene Renolds</h3>
-                                            <span>Periodontists</span>
+                                            <h3>Hannatu</h3>
+                                            <span>Scrap Team Lead</span>
                                         </div>
                                     </div>
                                 </SwiperSlide>
                                 <SwiperSlide>
                                     <div className='single-team-member'>
-                                        <img src={img7} alt="" />
+                                        <div className="img-rack"><img src={img3} alt="" /></div>
                                         <div class="overlay-style-one"></div>
                                         <div class="text-holder text-center">
-                                            <h3>Dr. Eugene Renolds</h3>
-                                            <span>Periodontists</span>
+                                            <h3>Jennifer</h3>
+                                            <span>Instructor</span>
                                         </div>
                                     </div>
                                 </SwiperSlide>
                                 <SwiperSlide>
                                     <div className='single-team-member'>
-                                        <img style={{ width: "22em" }} src={img3} alt="" />
+                                        <div className="img-rack"><img src={img4} alt="" /></div>
                                         <div class="overlay-style-one"></div>
                                         <div class="text-holder text-center">
-                                            <h3>Dr. Eugene Renolds</h3>
-                                            <span>Periodontists</span>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <div className='single-team-member'>
-                                        <img style={{ width: "23.5em" }} src={img4} alt="" />
-                                        <div class="overlay-style-one"></div>
-                                        <div class="text-holder text-center">
-                                            <h3>Dr. Eugene Renolds</h3>
-                                            <span>Periodontists</span>
+                                            <h3>Joseph George</h3>
+                                            <span>Head, Scrap Media</span>
                                         </div>
                                     </div>
                                 </SwiperSlide>
                                 <SwiperSlide>
                                     <div className='single-team-member' style={{ overflow: "hidden", width: "20em", textAlign: "center" }}>
-                                        <img style={{ width: "27em" }} src={img6} alt="" />
+                                        <div className="img-rack"><img src={img5} alt="" /></div>
                                         <div class="overlay-style-one"></div>
                                         <div class="text-holder text-center">
-                                            <h3>Dr. Eugene Renolds</h3>
-                                            <span>Periodontists</span>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <div className='single-team-member'>
-                                        <img src={img8} alt="" />
-                                        <div class="text-holder text-center">
-                                            <h3>Dr. Eugene Renolds</h3>
-                                            <span>Periodontists</span>
+                                            <h3>Jammai Samaila</h3>
+                                            <span>Instructor</span>
                                         </div>
                                     </div>
                                 </SwiperSlide>

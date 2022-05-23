@@ -6,7 +6,7 @@ import logo from "../../asses/image/LOGO11-01.png";
 import { NavLink } from "react-router-dom";
 import SLUGS from "../../utilities/slug";
 import {UnorderedListOutlined } from '@ant-design/icons';
-function Header() {
+function Header(props) {
 
     const [scroll, setscroll] = useState(true);
 
@@ -28,15 +28,15 @@ function Header() {
                 <label htmlFor="check" className='checkbtn'>
                     <UnorderedListOutlined />
                 </label>
-                <label className='logo'><NavLink to={SLUGS.home}> <img style={{ width: "135px" }} src={logo} alt="" /></NavLink></label>
+                <label className='logo'><NavLink to={SLUGS.home} onClick={props.loader}> <img style={{ width: "135px" }} src={logo} alt="" /></NavLink></label>
                 <ul>
-                    <li><NavLink activeclassName="active" to={SLUGS.home}>Home</NavLink></li>
-                    <li><NavLink activeclassName="active" to={SLUGS.about}>About</NavLink></li>
-                    <li><NavLink activeclassName="active" to={SLUGS.gallery}>Gallery</NavLink></li>
-                    <li><NavLink activeclassName="active" to={SLUGS.art}>Art Collection</NavLink></li>
-                    <li><NavLink activeclassName="active" to={SLUGS.team}>Team</NavLink></li>
-                    <li><NavLink activeclassName="active" to={SLUGS.project}>Project</NavLink></li>
-                    <li><NavLink activeclassName="active" to={SLUGS.contact}>Contact</NavLink></li>
+                    <li><NavLink activeclassName="active" to={SLUGS.home} onClick={props.loader}>Home</NavLink></li>
+                    <li><NavLink activeclassName="active" to={SLUGS.about} onClick={props.loader}>About</NavLink></li>
+                    <li><NavLink activeclassName="active" to={SLUGS.gallery} onClick={props.loader}>Gallery</NavLink></li>
+                    <li><NavLink activeclassName="active" to={SLUGS.art}  onClick={props.loader}>Art Collection</NavLink></li>
+                    <li><NavLink activeclassName="active" to={SLUGS.team} onClick={props.loader}>Team</NavLink></li>
+                    <li><NavLink activeclassName="active" to={SLUGS.project} onClick={props.loader}>Project</NavLink></li>
+                    <li><NavLink activeclassName="active" to={SLUGS.contact} onClick={props.loader}>Contact</NavLink></li>
                 </ul>
             </nav>
 

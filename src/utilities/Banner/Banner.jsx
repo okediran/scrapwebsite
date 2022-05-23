@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import { RightOutlined } from '@ant-design/icons';
-
 function Banner(props) {
+
     return (
         <div className='Banner'>
             <div className='inner-banner'>
@@ -10,7 +11,7 @@ function Banner(props) {
             <div className='inner-banner1'>
             </div>
             <h4>
-                Home <RightOutlined /> <p>{props.route}</p>
+               <Link to="/" style={{color:"white"}}>Home</Link>  <RightOutlined /> <p>{props.route}</p>
             </h4>
         </div>
     );
