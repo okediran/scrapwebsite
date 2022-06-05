@@ -48,8 +48,8 @@ function Contact() {
                             <div class="col-xl-4">
                                 <div class="contact-info-left">
                                     <div class="contact-title">
-                                        <h2>Send Your Message Us</h2>
-                                        <p>Dont be shy, Send your message or through form, our expert will help you ASAP.</p>
+                                        <h2>Send Us A Message</h2>
+                                        <p>We Are Building A Community For SCRAP, Join Us</p>
                                     </div>
                                     <div class="state-select-box2">
                                         <div class="state-content">
@@ -91,8 +91,8 @@ function Contact() {
                             <div className='col-xl-12 col-lg-12 col-md-12 col-sm-12'>
                                 <div class="contact-form">
                                     <div class="contact-title">
-                                        <h2>Send Your Message Us</h2>
-                                        <p>Dont be shy, Send your message or quiries through below form, our expert team will help you ASAP.</p>
+                                        <h2>Send Us A Message</h2>
+                                        <p>We are building a community of volunteers, teachers, marketers and influencers to create awareness for SCRAP. </p>
                                     </div>
                                     <form id="contact-form" name="contact_form" class="default-form" action="http://st.ourhtmldemo.com/new/Dento/inc/sendmail.php" method="post" novalidate="novalidate">
                                         <div class="row">

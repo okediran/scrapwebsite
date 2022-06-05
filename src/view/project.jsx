@@ -43,15 +43,26 @@ function Project() {
                     <span style={{ fontSize: "150px", fontWeight: "500", opacity: ".1", position: "absolute", letterSpacing: "20px" }}>
                         PROJECT
                     </span>
-                    <div className='col-lg-6 col-md-6 col' style={{ marginTop: "6rem" }}>
-                        <div className='padding-vision' style={{ paddingLeft: "80px" }}>
+                    <div className='col-lg-6 col-md-6 col d-flex' style={{ justifyContent:"center",alignItems:"center" }}>
+                        <div style={{ paddingLeft: "20px" }}>
                             <h2>THE SCRAP <br /> PROJECT</h2>
-                            <p>
-                                SCRAP is an initiative of Waste Reclaim committed to fostering grassroot quality education through recycling , SCRAP is designed as a conduit that engages participants on all levels and address common barriers to progress while also transitioning them into opportunities . It’s an social system that delivers better outcomes for people, and the environment.
+                            <p style={{lineHeight:"1.5"}}>
+                                In this unique SCRAP girls challenge dedicated to and inspired
+                                by the African female child, SCRAP intends to award ten lap-
+                                tops to ten girls competing in teams of five against six teams
+                                from other schools. The winning group will get training in digi-
+                                tal skills such as coding, fashion illustration, graphics, and edit-
+                                ing. <br/>
+                                This debut project is dedicated to Nusaiba, who was the
+                                inspiration behind SCRAP. We plan to locate more girls
+                                like Nusaiba from mostly government schools in the
+                                state of Kano, inspire in them the conviction that their
+                                ambitions are worthwhile, and provide them with the
+                                resources necessary to compete internationally.
                             </p>
                         </div>
                     </div>
-                    <div className='col-lg-6 col-md-6'>
+                    <div className='col-lg-6 col-md-6' style={{zIndex:"1"}}>
                         <div className='img-div'>
                             <img initial={{ x: '300px' }} animate={{ x: "0px" }} transition={{ delay: 1, duration: 1 }} src={img1} className="active-img" alt="" />
                         </div>

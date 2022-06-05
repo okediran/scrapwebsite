@@ -399,7 +399,7 @@ text-transform: capitalize;
 #About .goal .single-mission-vision-box {
   position: relative;
   display: block;
-  padding: 45px 60px 40px;
+  padding: 45px 20px 40px;
   border:  2px solid rgb(218, 116, 218);
   margin-bottom: 40px;
   color: white;
@@ -531,7 +531,7 @@ text-transform: capitalize;
   width: 700px;
 }
 #Project .Vision p{
-  padding: 0 100px;
+  padding: 0 40px;
 }
 #Project .Vision{
   margin-top: 6rem;
@@ -1017,9 +1017,6 @@ footer{
 #Art .card-deck .cont {
   padding: 0 70px;
 }
-}
-@media only screen and (max-width: 766px){
-  
 }
 
 @media only screen and (max-width: 952px){

@@ -49,8 +49,9 @@ function About() {
                                     <h3>Our Story</h3>
                                 </div>
                                 <div class="about-text-holder">
-                                    <p> was started in the year 1995 as a small private dental clinic in Binghamton, NY, USA. Looking for affordable dental care? .You can fund SCRAP by offsetting your organization or personal plastic footprint by purchasing a reclaim credit.</p>
-                                    <p>To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, pain  resultant pleasure praising teachings of the great explorer...</p>
+                                    <p> When a young girl in Kano State spoke about how she wanted to purchase a laptop for school but couldn't afford the whole collection, that was when SCRAP was born As soon as we helped with the remaining cost, we started to wonder how many other youngsters were eager to study outside of the school curriculum but lacked the resources.. </p>
+                                    <p>We made a conscious decision to provide rural students with the resources they need to experiment with new ideas outside of the classroom, such as how new technologies are reshaping the global landscape. 
+As an initiative of The Waste Reclaim Company, SCRAP aims to accomplish two things. To begin with, our Social Creative Recycle Art Programs aims to raise a new</p>
                                     <div class="author-box fix">
                                         <div class="img-box">
                                             <img src={profile} alt="founder"/>
@@ -76,7 +77,7 @@ function About() {
                             <div className='card-body'>
                                 <div class="single-mission-vision-box text-center wow fadeInLeft animated">
                                     <h6>Our Mission</h6>
-                                    <p>To provide outstanding dental care with a commitment of honesty, integrity &amp; quality...</p>
+                                    <p>To to raise a new generation of environmentally conscious children and to aid in the spread of modern technology and excellent educational systems to rural children. </p>
                                 </div>
                             </div>
                         </div>
@@ -85,8 +86,8 @@ function About() {
                         <div className='card'>
                             <div className='card-body'>
                                 <div class="single-mission-vision-box text-center wow fadeInUp animated">
-                                    <h6>Our Vision</h6>
-                                    <p>To be widely recognized as one of  world’s leading &amp; most preferred dental care service...</p>
+                                    <h6>Our Goal</h6>
+                                    <p>By 2025, we want to have 5,000 environmentally aware, technologically savvy, and well-educated youngsters from rural regions. </p>
                                 </div>
                             </div>
                         </div>
@@ -95,8 +96,8 @@ function About() {
                         <div className='card'>
                             <div className='card-body'>
                                 <div class="single-mission-vision-box text-center wow fadeInRight animated" >
-                                    <h6>Philosophy</h6>
-                                    <p>We play an active role in our community to make it abetter place to live and work...</p>
+                                    <h6>Our Philosophy</h6>
+                                    <p>The potential for rural children to dream beyond their environment is made possible by technology and education; a shot at achieving their dream is made possible by us. </p>
                                 </div>
                             </div>
                         </div>
