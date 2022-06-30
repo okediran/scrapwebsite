@@ -527,14 +527,25 @@ text-transform: capitalize;
   border-radius: 30px;
 }
                                                         /* Project */
-#Project .Vision img{
-  width: 700px;
+#Project img{
+  width: 100%;
+  object-fit: cover;
+  margin-top: -280px !important;
 }
-#Project .Vision p{
-  padding: 0 40px;
+#Project .img-div{
+  height: 450px;
+  overflow: hidden;
 }
 #Project .Vision{
-  margin-top: 6rem;
+  padding: 40px 40px 70px;
+}
+#Project .btn{
+  background: purple;
+  color: white;
+  margin: 40px 0px;
+}
+#Project .btn:hover{
+  background-color: #1a1d20;
 }
 
                                                           /* TEAM */
@@ -895,7 +906,7 @@ footer{
 }
 
 @media only screen and (max-width: 1024px){
-  #header .navbar-nav a{
+  .navbar-nav a{
     font-size: 20px
   }
   #Home .Vision span,#Home .Pipeline span{
@@ -996,34 +1007,34 @@ footer{
     padding: 0 10px;
   }
  
-#Project .Vision span{
-  display: none;
-}
-#Project .Vision .padding-vision{
-  padding-left: 0px !important;
-}
-#Project .col{
-  margin-top: 0px !important;
-}
-#Project .Vision p {
-  padding: 0 0px;
-}
-#Contact .contact-info-map-area{
-  padding: 0%;
-}
-#Home .support img{
-  width: 100% !important;
-}
-#Art .card-deck .cont {
-  padding: 0 70px;
-}
+  #Project .Vision span{
+    display: none;
+  }
+  #Project .Vision .padding-vision{
+    padding-left: 0px !important;
+  }
+  #Project .col{
+    margin-top: 0px !important;
+  }
+  #Project .Vision p {
+    padding: 0 0px;
+  }
+  #Contact .contact-info-map-area{
+    padding: 0%;
+  }
+  #Home .support img{
+    width: 100% !important;
+  }
+  #Art .card-deck .cont {
+    padding: 0 70px;
+  }
 }
 
 @media only screen and (max-width: 952px){
   #changeHeader nav label.logo, #header nav label.logo{
     padding-left: 50px;
   }
-  #header nav ul li a{
+   nav ul li a{
     font-size: 14px;
   }
 }
@@ -1048,7 +1059,7 @@ footer{
     margin: 40px 0;
     line-height: 30px;
   }
-  #changeHeader nav ul li a,#header nav ul li a{
+  #header nav ul li a,#changeHeader nav ul li a{
     font-size: 20px;
   }
   #header nav ul li a.active,nav ul li a:hover{
@@ -1079,104 +1090,104 @@ footer{
   #Home .banner h1 {
     font-size: 40px;
     margin-top: -60px;
-}
-#Home .banner  {
-  height: 300px;
-  padding: 10rem 0 0 3rem;
-}
-#Home .Vision {
-  margin-top: 0rem !important;
-}
-#Home .Vision p{
-  font-size: 15px;
-}
-#Home .Pipeline h2{
-  font-size: 25px;
-  letter-spacing: 1px;
-}
-#Home .Pipeline p{
-  font-size: 13px;
-}
-#Home .support h2{
-  font-size: 30px !important;
-  font-weight: 400;
-}
-.Banner h4{
-  left: 11.5rem;
-  top: 11em;
-}
-.Banner{
-  height: 150px;
-}
-.Banner h1{
-  left: 1rem;
-  top: 8em;
-}
-#About .about-details img{
-  width: 320px;
-}
-#About .inner-content .sec-title h3{
-  font-size: 15px;
-  font-weight: 400 !important;
-}
-#About .inner-content .sec-title h1{
-  font-size: 22px;
-}
-#About .padding,#About .about-details .inner-content {
-  padding: 0;
-}
-#About .goal .single-mission-vision-box{
-  padding: 45px 20px 40px;
-}
-#About .about-details{
-  padding: 0 30px;
-}
-#About .choose-area {
-  padding: 0 40px;
-}
+  }
+  #Home .banner  {
+    height: 300px;
+    padding: 10rem 0 0 3rem;
+  }
+  #Home .Vision {
+    margin-top: 0rem !important;
+  }
+  #Home .Vision p{
+    font-size: 15px;
+  }
+  #Home .Pipeline h2{
+    font-size: 25px;
+    letter-spacing: 1px;
+  }
+  #Home .Pipeline p{
+    font-size: 13px;
+  }
+  #Home .support h2{
+    font-size: 30px !important;
+    font-weight: 400;
+  }
+  .Banner h4{
+    left: 11.5rem;
+    top: 11em;
+  }
+  .Banner{
+    height: 150px;
+  }
+  .Banner h1{
+    left: 1rem;
+    top: 8em;
+  }
+  #About .about-details img{
+    width: 320px;
+  }
+  #About .inner-content .sec-title h3{
+    font-size: 15px;
+    font-weight: 400 !important;
+  }
+  #About .inner-content .sec-title h1{
+    font-size: 22px;
+  }
+  #About .padding,#About .about-details .inner-content {
+    padding: 0;
+  }
+  #About .goal .single-mission-vision-box{
+    padding: 45px 20px 40px;
+  }
+  #About .about-details{
+    padding: 0 30px;
+  }
+  #About .choose-area {
+    padding: 0 40px;
+  }
 
-#About .goal{
-  padding: 0 10px;
-}
-#Project .Vision span{
+  #About .goal{
+    padding: 0 10px;
+  }
+  #Project .Vision span{
+    display: none;
+  }
+  #Project .Vision img{
+    width: 390px;
+  }
+  #Project .Vision p {
+    padding: 0 0px;
+  }
+  #Project .Vision{
+    overflow: hidden;
+  }
+  #Contact .sec-title  h1{
+    font-size: 20px;
+  }
+  #Art .container {
   display: none;
-}
-#Project .Vision img{
-  width: 390px;
-}
-#Project .Vision p {
-  padding: 0 0px;
-}
-#Project .Vision{
-  overflow: hidden;
-}
-#Contact .sec-title  h1{
-  font-size: 20px;
-}
-#Art .container {
- display: none;
-}
-#Art .card-deck{
-  margin-top: 1rem;
-}
-#Art .card-deck .cont {
-  padding: 0 15px;
-}
-#Home .Home-video {
-  padding: 0 0px;
-  margin: 8.5rem 0px 1rem;
-}
-.reactplayer{
-  height: 400px !important;
-}
-#Gallery .gallery-padding{
-  padding: 80px 20px;
-}
-#Gallery .gallery-padding .col:nth-child(1){
-  height: 200px !important;
-} 
-ol, ul {
-  padding-left: 0rem !important;
-}
+  }
+  #Art .card-deck{
+    margin-top: 1rem;
+  }
+  #Art .card-deck .cont {
+    padding: 0 15px;
+  }
+  #Home .Home-video {
+    padding: 0 0px;
+    margin: 8.5rem 0px 1rem;
+  }
+  .reactplayer{
+    height: 400px !important;
+  }
+  #Gallery .gallery-padding{
+    padding: 80px 20px;
+  }
+  #Gallery .gallery-padding .col:nth-child(1){
+    height: 200px !important;
+  } 
+  ol, ul {
+    padding-left: 0rem !important;
+  }
 }
 

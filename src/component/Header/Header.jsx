@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { motion } from "framer-motion";
 
 // logo
 import logo from "../../asses/image/LOGO11-01.png";
@@ -21,7 +20,7 @@ function Header(props) {
     window.addEventListener('scroll', handleNav);
 
     return (
-        <motion.section  initial={{opacity:0, y: "-170px" }} animate={{opacity:1, y: "0px",transition:{delay:1.5,duration: 1}}} id={scroll ? 'header' : 'changeHeader'}>
+        <section id={scroll ? 'header' : 'changeHeader'}>
 
             {/* ROUTE */}
             <nav>
@@ -41,7 +40,7 @@ function Header(props) {
                 </ul>
             </nav>
 
-        </motion.section>
+        </section>
     );
 }
 

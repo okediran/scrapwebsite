@@ -68,7 +68,6 @@ function Team() {
                     <div className='row'>
                         <div className='col-xl-11 col-xxl-11 mx-auto'>
                             <div class="sec-title text-center">
-                                <h4 style={{ color: "purple",fontWeight:"700" }}>Professional Dentists</h4>
                                 <h1>Highly Qualified Team</h1>
                             </div>
                         </div>
@@ -91,7 +90,7 @@ function Team() {
                                         <div class="overlay-style-one"></div>
                                         <div class="text-holder text-center">
                                             <h3>Oyinebifinide</h3>
-                                            <span>CEO</span>
+                                            <span>CEO The Waste Reclaim Company/SCRAP</span>
                                         </div>
                                     </div>
                                 </SwiperSlide>
@@ -130,7 +129,7 @@ function Team() {
                                         <div className="img-rack"><img src={img5} alt="" /></div>
                                         <div class="overlay-style-one"></div>
                                         <div class="text-holder text-center">
-                                            <h3>Jammai Samaila</h3>
+                                            <h3>Jummai Samaila</h3>
                                             <span>Instructor</span>
                                         </div>
                                     </div>

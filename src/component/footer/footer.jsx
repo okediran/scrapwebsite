@@ -17,10 +17,11 @@ function Footer(props) {
                         <div class="widget">
                             <h4 class="widget-title text-white mb-3">Need Help?</h4>
                             <ul class="list-unstyled text-reset mb-0">
-                            <li><Link className="footer_link" to="">Support</Link></li>
-                            <li><Link className="footer_link" to="">Get Started</Link></li>
-                            <li><Link className="footer_link" to="">Terms of Use</Link></li>
-                            <li><Link className="footer_link" to="">Privacy Policy</Link></li>
+                                <li><Link className="footer_link" to="">Support</Link></li>
+                                <li><Link className="footer_link" to="">Get Started</Link></li>
+                                <li><Link className="footer_link" to="">Terms of Use</Link></li>
+                                <li><Link className="footer_link" to="">Privacy Policy</Link></li>
+                                <li><Link className="footer_link" to="">Learn More</Link></li>
                             </ul>
                         </div>
                     </div>
@@ -38,8 +39,8 @@ function Footer(props) {
                     <div class="col-md-4 col-lg-2">
                         <div class="widget">
                             <h4 class="widget-title text-white mb-3">Get in Touch</h4>
-                            <address>Moonshine St. 14/05 Light City, London, United Kingdom</address>
-                            <Link className="footer_link" to="ailto:first.last@email.com">info@email.com</Link><br/> +00 (123) 456 78 90
+                            <address>47 Kawaji Street. Opposite Buhari Shopping Complex. Hadeja Road, Kano State</address>
+                            <Link className="footer_link" to="ailto:first.last@email.com">info@email.com</Link><br/> +234 7080830433
                         </div>
                     </div>
                 </div>

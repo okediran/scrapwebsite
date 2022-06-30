@@ -1,8 +1,10 @@
 import React from 'react';
-import img1 from "../asses/image/rochas (1).jpg";
+import img1 from "../asses/image/rochas 2.jpg";
 import Banner from "../utilities/Banner/Banner";
 import useDocumentTitle from "../utilities/useDocumentTitle";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+
 
 function Project() {
    
@@ -30,7 +32,7 @@ function Project() {
         initial="hidden"
         animate="visible"
         exit="exit"
-        style={{overflow:"hidden",marginBottom:"10rem"}}
+        style={{overflow:"hidden"}}
         >
              {/* title */}
              <div style={{position:"absolute"}}>
@@ -38,36 +40,32 @@ function Project() {
             </div>
             {/* banner */}
                 <Banner page="Our Project" route="Our Project"/>
-            <div className='Vision'>
-                <div className='row'>
-                    <span style={{ fontSize: "150px", fontWeight: "500", opacity: ".1", position: "absolute", letterSpacing: "20px" }}>
-                        PROJECT
-                    </span>
-                    <div className='col-lg-6 col-md-6 col d-flex' style={{ justifyContent:"center",alignItems:"center" }}>
-                        <div style={{ paddingLeft: "20px" }}>
-                            <h2>THE SCRAP <br /> PROJECT</h2>
-                            <p style={{lineHeight:"1.5"}}>
-                                In this unique SCRAP girls challenge dedicated to and inspired
-                                by the African female child, SCRAP intends to award ten lap-
-                                tops to ten girls competing in teams of five against six teams
-                                from other schools. The winning group will get training in digi-
-                                tal skills such as coding, fashion illustration, graphics, and edit-
-                                ing. <br/>
-                                This debut project is dedicated to Nusaiba, who was the
-                                inspiration behind SCRAP. We plan to locate more girls
-                                like Nusaiba from mostly government schools in the
-                                state of Kano, inspire in them the conviction that their
-                                ambitions are worthwhile, and provide them with the
-                                resources necessary to compete internationally.
-                            </p>
-                        </div>
-                    </div>
-                    <div className='col-lg-6 col-md-6' style={{zIndex:"1"}}>
-                        <div className='img-div'>
-                            <img initial={{ x: '300px' }} animate={{ x: "0px" }} transition={{ delay: 1, duration: 1 }} src={img1} className="active-img" alt="" />
-                        </div>
-                    </div>
+            <div className='Vision container'>
+                <div>
+                     <h2>The SCRAP Vision</h2>
+                     <p style={{lineHeight:"1.5"}}>
+                        SCRAP is an initiative of Waste Reclaim committed to fostering grassroot quality education through recycling. 
+                        SCRAP is designed as a conduit that engages participants on all levels and address common barriers to progress while also transitioning them into opportunities.
+                         It's an social system that delivers better outcomes for people and the environment.
+                    </p>
                 </div>
+                <div style={{marginTop:"40px"}}>
+                    <h2>THE SCRAP <br /> PROJECT 2022</h2>
+                    <p style={{lineHeight:"1.5"}}>
+                        SCRAP intends to award 100 lap-tops to students participating in the SCRAP challenge, with a priority for girls, 
+                        in this unique SCRAP challenge dedicated to and inspired by the African female child. 70 girls and 30 boys from ten different schools will participate for a
+                        laptop and a two-month ICT bootcamp. The group will be trained in digital skills such as coding, NFTs, gaming, and other technological abilities. <br/>
+                        This first project is dedicated to Nusaiba, the inspiration for SCRAP.
+                         We intend to find additional girls like Nusaiba from predominantly government schools in Kano, instil in them the belief that their dreams are worthwhile, 
+                         and equip them with the tools needed to compete worldwide, as well as the same possibilities as their peers in private schools.
+                        <br/>
+                        To learn more about our plan download our pitch deck here.
+                    </p>
+                </div>
+                <Link to="" className="btn">Download Pitch Deck </Link>
+                    <div className='img-div'>
+                         <img src={img1} alt="" />
+                    </div>
             </div>
         </motion.section>
     );

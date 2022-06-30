@@ -113,21 +113,15 @@ function Gallery() {
               <GalleryCard click={()=>handleShow( <img className="img-fluid" width="100%" src={require("../asses/image/rochas 8.jpg")} alt="img"/> )}  img={require("../asses/image/rochas 8.jpg")}/>
             </div>
             <div className="col-lg-3">
-              <GalleryCard click={()=>handleShow( <img className="img-fluid" width="100%" src={require("../asses/image/rochas 4.jpg")} alt="img"/> )}  img={require("../asses/image/rochas 4.jpg")}/>
-            </div>
-            <div className="col-lg-3">
               <GalleryCard click={()=>handleShow( <img className="img-fluid" width="100%" src={require("../asses/image/rochas5.jpg")} alt="img"/> )}  img={require("../asses/image/rochas5.jpg")}/>
             </div>
             <div className="col-lg-6">
               <GalleryCard click={()=>handleShow( <img className="img-fluid" width="100%" src={require("../asses/image/rochas.jpg")} alt="img" /> )}  img={require("../asses/image/rochas.jpg")}/>
             </div>
-            <div className="col-lg-3">
+            <div className="col-lg-6">
               <GalleryCard click={()=>handleShow( <img className="img-fluid" width="100%" src={require("../asses/image/IMG_1386.JPG")} alt="img"/> )}  img={require("../asses/image/IMG_1386.JPG")}/>
             </div>
-            <div className="col-lg-2">
-              <GalleryCard click={()=>handleShow( <img className="img-fluid" width="100%" src={require("../asses/image/v2.jpg")} alt="img"/> )}  img={require("../asses/image/v2.jpg")}/>
-            </div>
-            <div className="col-lg-5">
+            <div className="col-lg-7">
               <GalleryCard click={()=>handleShow( <img className="img-fluid" width="100%" src={require("../asses/image/IMG_1366.JPG")} alt="img"/> )}  img={require("../asses/image/IMG_1366.JPG")}/>
             </div>
             <div className="col-lg-5">
@@ -139,27 +133,10 @@ function Gallery() {
             <div className="col-lg-6">
               <GalleryCard click={()=>handleShow( <img className="img-fluid" width="100%" src={require("../asses/image/IMG_1284.JPG")} alt="img"/> )}  img={require("../asses/image/IMG_1284.JPG")}/>
             </div>
-            <div className="col-lg-3">
-              <GalleryCard click={()=>handleShow( <img className="img-fluid" width="100%" src={require("../asses/image/v7.jpg")} alt="img"/> )}  img={require("../asses/image/v7.jpg")}/>
-            </div>
-            <div className="col-lg-3">
-              <GalleryCard click={()=>handleShow( <img className="img-fluid" width="100%" src={require("../asses/image/v6.jpg")} alt="img"/> )}  img={require("../asses/image/v6.jpg")}/>
-            </div>
-            <div className="col-lg-3">
-              <GalleryCard click={()=>handleShow( <img className="img-fluid" width="100%" src={require("../asses/image/v5.jpg")} alt="img"/> )}  img={require("../asses/image/v5.jpg")}/>
-            </div><div className="col-lg-3">
-              <GalleryCard click={()=>handleShow( <img className="img-fluid" width="100%" src={require("../asses/image/v4.jpg")} alt="img"/> )}  img={require("../asses/image/v4.jpg")}/>
-            </div>
-            <div className="col-lg-3">
-              <GalleryCard click={()=>handleShow( <img className="img-fluid" width="100%" src={require("../asses/image/v3.jpg")} alt="img"/> )}  img={require("../asses/image/v3.jpg")}/>
-            </div>
-            <div className="col-lg-3">
-              <GalleryCard click={()=>handleShow( <img className="img-fluid" width="100%" src={require("../asses/image/v1.jpg")} alt="img"/> )}  img={require("../asses/image/v1.jpg")}/>
-            </div>
-            <div className="col-lg-3">
+            <div className="col-lg-4">
               <GalleryCard click={()=>handleShow( <img className="img-fluid" width="100%" src={require("../asses/image/IMG_2081.JPG")} alt="img"/> )}  img={require("../asses/image/IMG_2081.JPG")}/>
             </div>
-            <div className="col-lg-3">
+            <div className="col-lg-8">
               <GalleryCard click={()=>handleShow( <img className="img-fluid" width="100%" src={require("../asses/image/IMG_2068.JPG")} alt="img"/> )}  img={require("../asses/image/IMG_2068.JPG")}/>
             </div>
             <div className="col-lg-6">

@@ -48,6 +48,7 @@ function Home() {
             <div className='row'>
                 <div className='col-12'>
                     <div className='banner'> 
+                    
                         <motion.h1 initial={{opacity:0,x: "-170px" }} animate={{opacity:1,x: "0px",transition:{delay:1.5,duration: 1}}}>Learn With <br />  SCRAP</motion.h1>
                     </div>
                 </div>
@@ -166,7 +167,7 @@ function Home() {
                             <button className='btn'>Buy Magazine</button>
                         </div>
                     </div>
-                    <div className='col-lg-6 col d-flex' style={{zIndex:"1", justifyContent:"center",alignItems:"center"}}>
+                    <div className="project img">
                         <img src={img4} className="active-img" alt="" />
                     </div>
                 </div>

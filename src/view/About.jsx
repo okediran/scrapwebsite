@@ -49,9 +49,12 @@ function About() {
                                     <h3>Our Story</h3>
                                 </div>
                                 <div class="about-text-holder">
-                                    <p> When a young girl in Kano State spoke about how she wanted to purchase a laptop for school but couldn't afford the whole collection, that was when SCRAP was born As soon as we helped with the remaining cost, we started to wonder how many other youngsters were eager to study outside of the school curriculum but lacked the resources.. </p>
+                                    <p> When a young girl in Kano State spoke about how she wanted to purchase a laptop for school but couldn't afford the whole collection, that was when SCRAP was born.
+                                         As soon as we helped with the remaining cost, we started to wonder how many other youngsters were eager to study outside of the school curriculum but lacked the resources.. </p>
                                     <p>We made a conscious decision to provide rural students with the resources they need to experiment with new ideas outside of the classroom, such as how new technologies are reshaping the global landscape. 
-As an initiative of The Waste Reclaim Company, SCRAP aims to accomplish two things. To begin with, our Social Creative Recycle Art Programs aims to raise a new</p>
+                                        As an initiative of The Waste Reclaim Company, SCRAP aims to accomplish two things. To begin with, our Social Creative Recycle Art Programs aims to raise a new of environmentally concious children though art and to aid in the spread of modern technology and
+                                        excellent educational systems to rural children in our annual exhibition, we'll showcase the progress the kids have made and the potential they have when provided wit the proper resources.
+                                    </p>
                                     <div class="author-box fix">
                                         <div class="img-box">
                                             <img src={profile} alt="founder"/>
